@@ -15,7 +15,7 @@ TEST(NginxConfigParserTest, SimpleConfig) {
   EXPECT_TRUE(success);
 }
 
-// append two strings on back of statement and parse it
+// Append two strings on back of statement and parse it.
 TEST(NginxConfigParserTest, ToString) {
   NginxConfigStatement statement;
   statement.tokens_.emplace_back("chad");
@@ -41,7 +41,7 @@ TEST_F(NginxStringConfigTest, SimpleTextConfig) {
   EXPECT_TRUE(testParse("chad smith;"));
 }
 
-// Test without use of class.  Does same as above test
+// Test without use of class.  Does same as above test.
 TEST_F(NginxStringConfigTest, SimpleBadTextConfig) {
   const string to_parse = "chad smith";
   stringstream config_stream(to_parse);
